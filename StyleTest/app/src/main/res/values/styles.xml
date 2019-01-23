@@ -1,18 +1,29 @@
 <resources>
 
     <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light">-->
+        <!--<item name="android:actionBarStyle">@style/MyTheme.ActionBar</item>-->
+        <!--<item name="actionBarStyle">@style/MyTheme.ActionBar</item>-->
+    <!--</style>-->
+
+    <!--<style name="MyTheme.ActionBar" parent="Widget.AppCompat.ActionBar.Solid">-->
+        <!--<item name="titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>-->
+    <!--</style>-->
+
+    <!--<style name="MyTheme.ActionBar.TitleTextStyle" parent="TextAppearance.AppCompat">-->
+        <!--<item name="android:background">#ff0000</item>-->
+        <!--<item name="android:textStyle">bold</item>-->
+    <!--</style>-->
     <style name="AppTheme" parent="Theme.AppCompat.Light">
-        <item name="android:actionBarStyle">@style/MyTheme.ActionBar</item>
-        <item name="actionBarStyle">@style/MyTheme.ActionBar</item>
+        <item name="actionBarStyle">@style/ActionBarCompat</item>
     </style>
 
-    <style name="MyTheme.ActionBar" parent="Widget.AppCompat.ActionBar.Solid">
-        <item name="titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    <style name="ActionBarCompat" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="titleTextStyle">@style/titleStyle</item>
     </style>
 
-    <style name="MyTheme.ActionBar.TitleTextStyle" parent="TextAppearance.AppCompat">
-        <item name="android:background">#ff0000</item>
+    <style name="titleStyle" parent="Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textColor">@android:color/holo_blue_dark</item>
         <item name="android:textStyle">bold</item>
     </style>
-
 </resources>
